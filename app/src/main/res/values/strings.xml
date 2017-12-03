@@ -3,4 +3,7 @@
     <string name="welcome">Welcome to Checkers!</string>
     <string name="multiplayer">Multiplayer</string>
     <string name="singleplayer">Single Player</string>
+    <string name="choose_opponent">Choose Opponent</string>
+    <string name="pass_and_play">Pass and play</string>
+    <string name="computer">Computer</string>
 </resources>
