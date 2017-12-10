@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.checkers.StartupScreen">
+    android:background="@android:color/background_light"
+    tools:context="com.example.checkers.IndependentActivities.StartupScreen">
 
     <TextView
         android:id="@+id/textView_welcome"

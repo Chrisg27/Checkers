@@ -9,14 +9,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".StartupScreen">
+        <activity
+            android:name=".IndependentActivities.StartupScreen"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SingleplayerSelectScreen"></activity>
+        <activity
+            android:name=".IndependentActivities.SingleplayerSelectScreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true"/>
+        <activity
+            android:name=".BoardDisplay"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".IndependentActivities.MultiplayerSelectScreen"
+            android:screenOrientation="portrait"
+            android:noHistory="true"/>
     </application>
 
 </manifest>

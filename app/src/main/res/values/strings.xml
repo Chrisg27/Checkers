@@ -6,4 +6,5 @@
     <string name="choose_opponent">Choose Opponent</string>
     <string name="pass_and_play">Pass and play</string>
     <string name="computer">Computer</string>
+    <string name="blank" />
 </resources>

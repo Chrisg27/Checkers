@@ -1,9 +1,11 @@
-package com.example.checkers;
+package com.example.checkers.IndependentActivities;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.checkers.R;
 
 public class StartupScreen extends AppCompatActivity {
 
