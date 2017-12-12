@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.checkers.BoardDisplay;
+import com.example.checkers.BoardSquare;
 import com.example.checkers.Game;
 import com.example.checkers.R;
 
@@ -27,5 +28,6 @@ public class SingleplayerSelectScreen extends AppCompatActivity {
         new Game(Game.GameType.AI);
         Intent intent = new Intent(this, BoardDisplay.class);
         startActivity(intent);
+
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/parent_window"
@@ -9,631 +10,760 @@
     tools:context="com.example.checkers.BoardDisplay">
 
     <TableLayout
-        android:layout_width="408dp"
+        android:id="@+id/boardLayout"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.438">
+        app:layout_constraintVertical_bias="0.5">
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_1-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="0"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_2-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="1"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_3-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="2"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_4-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="3"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_5-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="4"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_6-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="5"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_7-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="6"
+                custom:verticalIndex="7" />
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="0" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="1" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="2" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="3" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="4" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="5" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="6" />
 
-            <ToggleButton
+            <com.example.checkers.BoardSquare
                 android:id="@+id/boardsquare_8-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
                 android:background="@android:color/holo_red_dark"
                 android:textOff="@string/blank"
-                android:textOn="@string/blank" />
+                android:textOn="@string/blank"
+                custom:horizontalIndex="7"
+                custom:verticalIndex="7" />
         </TableRow>
 
     </TableLayout>
