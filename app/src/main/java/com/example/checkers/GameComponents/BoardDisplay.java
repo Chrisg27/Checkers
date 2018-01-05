@@ -17,7 +17,7 @@ public class BoardDisplay extends AppCompatActivity {
         setContentView(R.layout.activity_board_display);
         currentInstance = this;
 
-        //waits for layout to be drawn before dynamically sizing boardsquares
+        //waits for layout to be drawn before dynamically sizing boardSquares
         final Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             @Override
