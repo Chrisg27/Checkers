@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="BoardSquare">
-        <attr name="horizontalIndex" format="integer"/>
-        <attr name="verticalIndex" format="integer"/>
+        <attr name="hasPiece" format="boolean"/>
+        <attr name="isPieceKing" format="boolean"/>
+        <attr name="pieceColor" format="string"/>
+        <attr name="rowIndex" format="integer"/>
+        <attr name="columnIndex" format="integer"/>
     </declare-styleable>
 </resources>

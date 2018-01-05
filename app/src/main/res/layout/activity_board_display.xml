@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/woodtexture"
-    tools:context="com.example.checkers.BoardDisplay">
+    tools:context="com.example.checkers.GameComponents.BoardDisplay">
 
     <TableLayout
         android:id="@+id/boardLayout"
@@ -26,18 +26,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="0" />
+                custom:rowIndex="0"
+                custom:columnIndex="0"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -45,21 +50,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="1" />
+                custom:rowIndex="0"
+                custom:columnIndex="1"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="2" />
+                custom:rowIndex="0"
+                custom:columnIndex="2"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -67,21 +78,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="3" />
+                custom:rowIndex="0"
+                custom:columnIndex="3"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="4" />
+                custom:rowIndex="0"
+                custom:columnIndex="4"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -89,21 +106,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="5" />
+                custom:rowIndex="0"
+                custom:columnIndex="5"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="6" />
+                custom:rowIndex="0"
+                custom:columnIndex="6"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -111,15 +134,16 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="0"
-                custom:verticalIndex="7" />
+                custom:rowIndex="0"
+                custom:columnIndex="7"
+                custom:hasPiece="false"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -127,21 +151,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="0" />
+                custom:rowIndex="1"
+                custom:columnIndex="0"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="1" />
+                custom:rowIndex="1"
+                custom:columnIndex="1"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -149,21 +179,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="2" />
+                custom:rowIndex="1"
+                custom:columnIndex="2"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="3" />
+                custom:rowIndex="1"
+                custom:columnIndex="3"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -171,21 +207,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="4" />
+                custom:rowIndex="1"
+                custom:columnIndex="4"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="5" />
+                custom:rowIndex="1"
+                custom:columnIndex="5"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -193,37 +235,48 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="6" />
+                custom:rowIndex="1"
+                custom:columnIndex="6"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="1"
-                custom:verticalIndex="7" />
+                custom:rowIndex="1"
+                custom:columnIndex="7"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="0" />
+                custom:rowIndex="2"
+                custom:columnIndex="0"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -231,21 +284,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="1" />
+                custom:rowIndex="2"
+                custom:columnIndex="1"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="2" />
+                custom:rowIndex="2"
+                custom:columnIndex="2"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -253,21 +312,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="3" />
+                custom:rowIndex="2"
+                custom:columnIndex="3"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="4" />
+                custom:rowIndex="2"
+                custom:columnIndex="4"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -275,21 +340,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="5" />
+                custom:rowIndex="2"
+                custom:columnIndex="5"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="6" />
+                custom:rowIndex="2"
+                custom:columnIndex="6"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="red"
+                android:src="@drawable/checker_red"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -297,15 +368,16 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="2"
-                custom:verticalIndex="7" />
+                custom:rowIndex="2"
+                custom:columnIndex="7"
+                custom:hasPiece="false"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -313,21 +385,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="0" />
+                custom:rowIndex="3"
+                custom:columnIndex="0"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="1" />
+                custom:rowIndex="3"
+                custom:columnIndex="1"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -335,21 +409,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="2" />
+                custom:rowIndex="3"
+                custom:columnIndex="2"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="3" />
+                custom:rowIndex="3"
+                custom:columnIndex="3"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -357,21 +433,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="4" />
+                custom:rowIndex="3"
+                custom:columnIndex="4"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="5" />
+                custom:rowIndex="3"
+                custom:columnIndex="5"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -379,37 +457,40 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="6" />
+                custom:rowIndex="3"
+                custom:columnIndex="6"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="3"
-                custom:verticalIndex="7" />
+                custom:rowIndex="3"
+                custom:columnIndex="7"
+                custom:hasPiece="false"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="0" />
+                custom:rowIndex="4"
+                custom:columnIndex="0"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -417,21 +498,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="1" />
+                custom:rowIndex="4"
+                custom:columnIndex="1"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="2" />
+                custom:rowIndex="4"
+                custom:columnIndex="2"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -439,21 +522,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="3" />
+                custom:rowIndex="4"
+                custom:columnIndex="3"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="4" />
+                custom:rowIndex="4"
+                custom:columnIndex="4"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -461,21 +546,23 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="5" />
+                custom:rowIndex="4"
+                custom:columnIndex="5"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="6" />
+                custom:rowIndex="4"
+                custom:columnIndex="6"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -483,15 +570,16 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="4"
-                custom:verticalIndex="7" />
+                custom:rowIndex="4"
+                custom:columnIndex="7"
+                custom:hasPiece="false"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -499,21 +587,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="0" />
+                custom:rowIndex="5"
+                custom:columnIndex="0"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="1" />
+                custom:rowIndex="5"
+                custom:columnIndex="1"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -521,21 +615,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="2" />
+                custom:rowIndex="5"
+                custom:columnIndex="2"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="3" />
+                custom:rowIndex="5"
+                custom:columnIndex="3"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -543,21 +643,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="4" />
+                custom:rowIndex="5"
+                custom:columnIndex="4"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="5" />
+                custom:rowIndex="5"
+                custom:columnIndex="5"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -565,37 +671,48 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="6" />
+                custom:rowIndex="5"
+                custom:columnIndex="6"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="5"
-                custom:verticalIndex="7" />
+                custom:rowIndex="5"
+                custom:columnIndex="7"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="0" />
+                custom:rowIndex="6"
+                custom:columnIndex="0"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -603,21 +720,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="1" />
+                custom:rowIndex="6"
+                custom:columnIndex="1"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="2" />
+                custom:rowIndex="6"
+                custom:columnIndex="2"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -625,21 +748,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="3" />
+                custom:rowIndex="6"
+                custom:columnIndex="3"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="4" />
+                custom:rowIndex="6"
+                custom:columnIndex="4"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -647,21 +776,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="5" />
+                custom:rowIndex="6"
+                custom:columnIndex="5"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="6" />
+                custom:rowIndex="6"
+                custom:columnIndex="6"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -669,15 +804,16 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="6"
-                custom:verticalIndex="7" />
+                custom:rowIndex="6"
+                custom:columnIndex="7"
+                custom:hasPiece="false"/>
         </TableRow>
 
         <TableRow
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-1"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -685,21 +821,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="0" />
+                custom:rowIndex="7"
+                custom:columnIndex="0"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-2"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="1" />
+                custom:rowIndex="7"
+                custom:columnIndex="1"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-3"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -707,21 +849,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="2" />
+                custom:rowIndex="7"
+                custom:columnIndex="2"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-4"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="3" />
+                custom:rowIndex="7"
+                custom:columnIndex="3"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-5"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -729,21 +877,27 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="4" />
+                custom:rowIndex="7"
+                custom:columnIndex="4"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-6"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="5" />
+                custom:rowIndex="7"
+                custom:columnIndex="5"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-7"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
@@ -751,19 +905,25 @@
                 android:background="@android:color/black"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="6" />
+                custom:rowIndex="7"
+                custom:columnIndex="6"
+                custom:hasPiece="false"/>
 
-            <com.example.checkers.BoardSquare
+            <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-8"
                 style="?android:attr/borderlessButtonStyle"
                 android:layout_width="51dp"
                 android:layout_height="match_parent"
-                android:background="@android:color/holo_red_dark"
+                android:background="@android:color/holo_red_light"
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
-                custom:horizontalIndex="7"
-                custom:verticalIndex="7" />
+                custom:rowIndex="7"
+                custom:columnIndex="7"
+                custom:hasPiece="true"
+                custom:isPieceKing="false"
+                custom:pieceColor="black"
+                android:src="@drawable/checker_black"
+                android:scaleType="fitCenter"/>
         </TableRow>
 
     </TableLayout>

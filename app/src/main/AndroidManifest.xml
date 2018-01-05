@@ -23,7 +23,7 @@
             android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
-            android:name=".BoardDisplay"
+            android:name=".GameComponents.BoardDisplay"
             android:screenOrientation="portrait"/>
         <activity
             android:name=".IndependentActivities.MultiplayerSelectScreen"
