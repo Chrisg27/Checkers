@@ -1,6 +1,5 @@
 package com.example.checkers.GameComponents;
 
-import android.os.Handler;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,22 +8,24 @@ import com.example.checkers.R;
 
 public class BoardDisplay extends AppCompatActivity {
 
-    private static BoardDisplay currentInstance;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_board_display);
-        currentInstance = this;
+    }
 
-        //waits for layout to be drawn before dynamically sizing boardSquares
-        final Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
+    @Override
+    protected void onStart(){
+        super.onStart();
+
+        findViewById(R.id.parent_window).post(new Runnable() {
             @Override
             public void run() {
                 fitBoardOnScreen();
+                //Start game after the whole activity has been set up
+                GameManager.startNewGame();
             }
-        }, 100);
+        });
     }
 
     private void fitBoardOnScreen(){

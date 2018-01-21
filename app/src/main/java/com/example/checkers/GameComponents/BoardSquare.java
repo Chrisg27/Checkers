@@ -92,6 +92,13 @@ public class BoardSquare extends AppCompatImageButton implements Checkable {
         setPossibleMoves();
     }
 
+    public void adjustSize(int size){
+        ViewGroup.LayoutParams params = getLayoutParams();
+        params.width = size;
+        params.height = size;
+        setLayoutParams(params);
+    }
+
     public void setPossibleMoves(){
 
         if(rowIndex - 1 >= 0 && columnIndex - 1 >= 0) possibleBlackMoves.add(GameManager.getSquareAt(rowIndex - 1, columnIndex - 1));
@@ -104,10 +111,35 @@ public class BoardSquare extends AppCompatImageButton implements Checkable {
         if(rowIndex + 2 < 8 && columnIndex - 2 >= 0) possibleRedJumps.add(GameManager.getSquareAt(rowIndex + 2, columnIndex - 2));
     }
 
-    public void adjustSize(int size){
-        ViewGroup.LayoutParams params = getLayoutParams();
-        params.width = size;
-        params.height = size;
-        setLayoutParams(params);
+    public boolean checkIfPossibleMove(BoardSquare moveToSquare){
+
+        if(piece.getColor().equals("red") || piece.isKing()){
+            for(BoardSquare square : possibleRedMoves){
+                if(square == moveToSquare) return true;
+            }
+        }
+
+        else if(piece.getColor().equals("black") || piece.isKing()){
+            for(BoardSquare square : possibleBlackMoves){
+                if(square == moveToSquare) return true;
+            }
+
+        } return false;
+    }
+
+    public boolean checkIfPossibleJump(BoardSquare jumpToSquare){
+
+        if(piece.getColor().equals("red") || piece.isKing()){
+            for(BoardSquare square : possibleRedJumps){
+                if(square == jumpToSquare) return true;
+            }
+        }
+
+        else if(piece.getColor().equals("black") || piece.isKing()){
+            for(BoardSquare square : possibleBlackJumps){
+                if(square == jumpToSquare) return true;
+            }
+
+        } return false;
     }
 }

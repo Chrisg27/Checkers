@@ -21,13 +21,13 @@ public class SingleplayerSelectScreen extends AppCompatActivity {
 
     public void startPassAndPlayGame(View view){
         Intent intent = new Intent(this, BoardDisplay.class);
-        GameManager.setUpNewGame(new PassAndPlayGame());
         startActivity(intent);
+        GameManager.setUpNewGame(new PassAndPlayGame());
     }
 
     public void startAIGame(View view){
         Intent intent = new Intent(this, BoardDisplay.class);
-        GameManager.setUpNewGame(new AIGame());
         startActivity(intent);
+        GameManager.setUpNewGame(new AIGame());
     }
 }
