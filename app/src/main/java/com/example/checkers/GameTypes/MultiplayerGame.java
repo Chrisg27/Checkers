@@ -4,13 +4,12 @@ import com.example.checkers.GameComponents.BoardSquare;
 
 public class MultiplayerGame extends GeneralGame {
 
+    public MultiplayerGame(){
+        super();
+    }
+
     public boolean checkFirstSelectedSquare(BoardSquare square){
 
         return false;
     }
-    public boolean switchTurns(){
-
-        return false;
-    }
-
 }

@@ -36,10 +36,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
                 custom:columnIndex="0"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -51,8 +47,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
-                custom:columnIndex="1"
-                custom:hasPiece="false"/>
+                custom:columnIndex="1" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-3"
@@ -64,10 +59,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
                 custom:columnIndex="2"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -79,8 +70,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
-                custom:columnIndex="3"
-                custom:hasPiece="false"/>
+                custom:columnIndex="3" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-5"
@@ -92,10 +82,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
                 custom:columnIndex="4"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -107,8 +93,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
-                custom:columnIndex="5"
-                custom:hasPiece="false"/>
+                custom:columnIndex="5" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_1-7"
@@ -120,10 +105,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
                 custom:columnIndex="6"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -135,8 +116,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="0"
-                custom:columnIndex="7"
-                custom:hasPiece="false"/>
+                custom:columnIndex="7" />
         </TableRow>
 
         <TableRow
@@ -152,8 +132,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
-                custom:columnIndex="0"
-                custom:hasPiece="false"/>
+                custom:columnIndex="0" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-2"
@@ -165,10 +144,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
                 custom:columnIndex="1"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -180,8 +155,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
-                custom:columnIndex="2"
-                custom:hasPiece="false"/>
+                custom:columnIndex="2" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-4"
@@ -193,10 +167,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
                 custom:columnIndex="3"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -208,8 +178,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
-                custom:columnIndex="4"
-                custom:hasPiece="false"/>
+                custom:columnIndex="4" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-6"
@@ -221,10 +190,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
                 custom:columnIndex="5"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -236,8 +201,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
-                custom:columnIndex="6"
-                custom:hasPiece="false"/>
+                custom:columnIndex="6" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_2-8"
@@ -249,10 +213,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="1"
                 custom:columnIndex="7"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
         </TableRow>
 
@@ -270,10 +230,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
                 custom:columnIndex="0"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -285,8 +241,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
-                custom:columnIndex="1"
-                custom:hasPiece="false"/>
+                custom:columnIndex="1" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-3"
@@ -298,10 +253,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
                 custom:columnIndex="2"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -313,8 +264,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
-                custom:columnIndex="3"
-                custom:hasPiece="false"/>
+                custom:columnIndex="3" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-5"
@@ -326,10 +276,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
                 custom:columnIndex="4"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -341,8 +287,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
-                custom:columnIndex="5"
-                custom:hasPiece="false"/>
+                custom:columnIndex="5" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_3-7"
@@ -354,10 +299,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
                 custom:columnIndex="6"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="red"
-                android:src="@drawable/checker_red"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -369,8 +310,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="2"
-                custom:columnIndex="7"
-                custom:hasPiece="false"/>
+                custom:columnIndex="7" />
         </TableRow>
 
         <TableRow
@@ -386,8 +326,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
-                custom:columnIndex="0"
-                custom:hasPiece="false"/>
+                custom:columnIndex="0" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-2"
@@ -399,7 +338,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
                 custom:columnIndex="1"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-3"
@@ -410,8 +349,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
-                custom:columnIndex="2"
-                custom:hasPiece="false"/>
+                custom:columnIndex="2" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-4"
@@ -423,7 +361,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
                 custom:columnIndex="3"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-5"
@@ -434,8 +372,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
-                custom:columnIndex="4"
-                custom:hasPiece="false"/>
+                custom:columnIndex="4" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-6"
@@ -447,7 +384,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
                 custom:columnIndex="5"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-7"
@@ -458,8 +395,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
-                custom:columnIndex="6"
-                custom:hasPiece="false"/>
+                custom:columnIndex="6" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_4-8"
@@ -471,7 +407,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="3"
                 custom:columnIndex="7"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
         </TableRow>
 
         <TableRow
@@ -488,7 +424,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
                 custom:columnIndex="0"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-2"
@@ -499,8 +435,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
-                custom:columnIndex="1"
-                custom:hasPiece="false"/>
+                custom:columnIndex="1" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-3"
@@ -512,7 +447,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
                 custom:columnIndex="2"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-4"
@@ -523,8 +458,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
-                custom:columnIndex="3"
-                custom:hasPiece="false"/>
+                custom:columnIndex="3" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-5"
@@ -536,7 +470,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
                 custom:columnIndex="4"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-6"
@@ -547,8 +481,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
-                custom:columnIndex="5"
-                custom:hasPiece="false"/>
+                custom:columnIndex="5" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-7"
@@ -560,7 +493,7 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
                 custom:columnIndex="6"
-                custom:hasPiece="false"/>
+                android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_5-8"
@@ -571,8 +504,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="4"
-                custom:columnIndex="7"
-                custom:hasPiece="false"/>
+                custom:columnIndex="7" />
         </TableRow>
 
         <TableRow
@@ -588,8 +520,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
-                custom:columnIndex="0"
-                custom:hasPiece="false"/>
+                custom:columnIndex="0" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-2"
@@ -601,10 +532,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
                 custom:columnIndex="1"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -616,8 +543,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
-                custom:columnIndex="2"
-                custom:hasPiece="false"/>
+                custom:columnIndex="2" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-4"
@@ -629,10 +555,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
                 custom:columnIndex="3"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -644,8 +566,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
-                custom:columnIndex="4"
-                custom:hasPiece="false"/>
+                custom:columnIndex="4" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-6"
@@ -657,10 +578,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
                 custom:columnIndex="5"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -672,8 +589,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
-                custom:columnIndex="6"
-                custom:hasPiece="false"/>
+                custom:columnIndex="6" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_6-8"
@@ -685,10 +601,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="5"
                 custom:columnIndex="7"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
         </TableRow>
 
@@ -706,10 +618,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
                 custom:columnIndex="0"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -721,8 +629,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
-                custom:columnIndex="1"
-                custom:hasPiece="false"/>
+                custom:columnIndex="1" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-3"
@@ -734,10 +641,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
                 custom:columnIndex="2"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -749,8 +652,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
-                custom:columnIndex="3"
-                custom:hasPiece="false"/>
+                custom:columnIndex="3" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-5"
@@ -762,10 +664,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
                 custom:columnIndex="4"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -777,8 +675,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
-                custom:columnIndex="5"
-                custom:hasPiece="false"/>
+                custom:columnIndex="5" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_7-7"
@@ -790,10 +687,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
                 custom:columnIndex="6"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -805,8 +698,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="6"
-                custom:columnIndex="7"
-                custom:hasPiece="false"/>
+                custom:columnIndex="7" />
         </TableRow>
 
         <TableRow
@@ -822,8 +714,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
-                custom:columnIndex="0"
-                custom:hasPiece="false"/>
+                custom:columnIndex="0" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-2"
@@ -835,10 +726,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
                 custom:columnIndex="1"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -850,8 +737,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
-                custom:columnIndex="2"
-                custom:hasPiece="false"/>
+                custom:columnIndex="2" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-4"
@@ -863,10 +749,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
                 custom:columnIndex="3"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -878,8 +760,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
-                custom:columnIndex="4"
-                custom:hasPiece="false"/>
+                custom:columnIndex="4" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-6"
@@ -891,10 +772,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
                 custom:columnIndex="5"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
 
             <com.example.checkers.GameComponents.BoardSquare
@@ -906,8 +783,7 @@
                 android:textOff="@string/blank"
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
-                custom:columnIndex="6"
-                custom:hasPiece="false"/>
+                custom:columnIndex="6" />
 
             <com.example.checkers.GameComponents.BoardSquare
                 android:id="@+id/boardsquare_8-8"
@@ -919,10 +795,6 @@
                 android:textOn="@string/blank"
                 custom:rowIndex="7"
                 custom:columnIndex="7"
-                custom:hasPiece="true"
-                custom:isPieceKing="false"
-                custom:pieceColor="black"
-                android:src="@drawable/checker_black"
                 android:scaleType="fitCenter"/>
         </TableRow>
 

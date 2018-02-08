@@ -24,10 +24,6 @@ public class GameManager {
         squareManager.setBoardSquareAt(rowIndex, columnIndex, square);
     }
 
-    public static void checkSelection(BoardSquare square){
-        gameLoop.handleSquareInputs(square);
-    }
-
     //doesn't actually return an input but frees up the squares which allows the squares to be clicked
     public static void requestInput(){
         squareManager.freeBoardSquares();

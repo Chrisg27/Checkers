@@ -4,11 +4,11 @@ import com.example.checkers.GameComponents.BoardSquare;
 
 public class PassAndPlayGame extends GeneralGame {
 
-    public boolean checkFirstSelectedSquare(BoardSquare square){
-
-        return false;
+    public PassAndPlayGame(){
+        super();
     }
-    public boolean switchTurns(){
+
+    public boolean checkFirstSelectedSquare(BoardSquare square){
 
         return false;
     }
