@@ -20,6 +20,8 @@ public class BoardSquare extends AppCompatImageButton implements Checkable {
     private int columnIndex;
 
     private boolean isChecked;
+    private boolean isHighlighted;
+    private boolean hasPiece;
 
     public BoardSquare(Context context){
         super(context);
@@ -62,14 +64,39 @@ public class BoardSquare extends AppCompatImageButton implements Checkable {
     @Override
     public void toggle(){
         setChecked(!isChecked);
+        if(isChecked) setBackgroundColor(getResources().getColor(android.R.color.holo_blue_bright));
+        else setBackgroundColor(getResources().getColor(android.R.color.transparent));
+    }
+
+    public boolean isHighlighted(){
+        return isHighlighted;
+    }
+
+    public void highlight(){
+        isHighlighted = true;
+        setBackgroundColor(getResources().getColor(android.R.color.holo_blue_bright));
+    }
+
+    public void unhighlight(){
+        isHighlighted = false;
+        setBackgroundColor(getResources().getColor(android.R.color.transparent));
     }
 
     public int getRowIndex() {
         return rowIndex;
     }
-    public int getcolumnIndex(){
+    public int getColumnIndex(){
         return columnIndex;
     }
+
+    public void setHasPiece(boolean state){
+        hasPiece = state;
+    }
+
+    public boolean hasPiece(){
+        return hasPiece;
+    }
+
     private void addToBoardSquareArray(){
         GameManager.setSquareAt(rowIndex, columnIndex, this);
     }

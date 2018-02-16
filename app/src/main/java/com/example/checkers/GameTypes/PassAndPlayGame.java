@@ -1,15 +1,13 @@
 package com.example.checkers.GameTypes;
 
-import com.example.checkers.GameComponents.BoardSquare;
+import com.example.checkers.GameComponents.GameManager;
 
 public class PassAndPlayGame extends GeneralGame {
 
-    public PassAndPlayGame(){
-        super();
-    }
-
-    public boolean checkFirstSelectedSquare(BoardSquare square){
-
-        return false;
+    @Override
+    public void postMove() {
+        super.postMove();
+        GameManager.resetBoard();
+        switchTurns();
     }
 }

@@ -4,18 +4,21 @@ import com.example.checkers.GameComponents.BoardSquare;
 import com.example.checkers.Player.Player;
 
 import java.util.ArrayList;
+import java.util.logging.Handler;
 
 public abstract class GamePiece {
 
     private int pieceImageId;
     private Player owner;
     private BoardSquare location;
+    private MoveHandler moveHandler;
 
     public GamePiece(Player owner, BoardSquare location){
 
         this.owner = owner;
         this.location = location;
-        this.pieceImageId = owner.getColor().getpieceImageId();
+        this.pieceImageId = owner.getColor().getPieceImageId();
+        this.moveHandler = new MoveHandler();
     }
 
     public abstract ArrayList<BoardSquare> getPossibleMoves();
@@ -37,9 +40,23 @@ public abstract class GamePiece {
     public void setPieceImageId(int pieceImageId){
         this.pieceImageId = pieceImageId;
     }
-
     public void drawPiece(){
-        location.setImageResource(getPieceImageId());
-        location.invalidate();
+        location.setImageResource(pieceImageId);
+    }
+    public MoveHandler getMoveHandler(){
+        return moveHandler;
+    }
+    public BoardSquare getJumpedSquareFor(BoardSquare newLocation){
+        return moveHandler.getJumpedSquare(this.location, newLocation);
+    }
+
+    public void moveTo(BoardSquare square){
+        square.setHasPiece(true);
+        square.setImageResource(getPieceImageId());
+
+        location.setHasPiece(false);
+        location.setImageResource(android.R.color.transparent);
+
+        location = square;
     }
 }

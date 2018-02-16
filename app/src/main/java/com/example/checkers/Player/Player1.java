@@ -14,6 +14,7 @@ public class Player1 extends Player {
         super(new Player1PieceColor());
         setPieceStartingPositions();
         firstTimePieceSetUp();
+        setKingRow(0);
     }
 
     @Override
@@ -21,17 +22,40 @@ public class Player1 extends Player {
         ArrayList<BoardSquare> positions = getPieceStartingPositions();
 
         positions.add(GameManager.getSquareAt(5,1));
+        GameManager.getSquareAt(5, 1).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(5,3));
+        GameManager.getSquareAt(5, 3).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(5,5));
+        GameManager.getSquareAt(5, 5).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(5,7));
+        GameManager.getSquareAt(5, 7).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(6,0));
+        GameManager.getSquareAt(6, 0).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(6,2));
+        GameManager.getSquareAt(6, 2).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(6,4));
+        GameManager.getSquareAt(6, 4).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(6,6));
+        GameManager.getSquareAt(6, 6).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(7,1));
+        GameManager.getSquareAt(7, 1).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(7,3));
+        GameManager.getSquareAt(7, 3).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(7,5));
+        GameManager.getSquareAt(7, 5).setHasPiece(true);
+
         positions.add(GameManager.getSquareAt(7,7));
+        GameManager.getSquareAt(7, 7).setHasPiece(true);
     }
 
     @Override

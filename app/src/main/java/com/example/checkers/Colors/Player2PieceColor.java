@@ -5,7 +5,7 @@ import com.example.checkers.R;
 public class Player2PieceColor implements PieceColor {
 
     @Override
-    public int getpieceImageId() {
+    public int getPieceImageId() {
         return R.drawable.checker_red;
     }
 

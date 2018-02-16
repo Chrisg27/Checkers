@@ -1,15 +1,14 @@
 package com.example.checkers.GameTypes;
 
-import com.example.checkers.GameComponents.BoardSquare;
+import com.example.checkers.GameComponents.GameManager;
 
 public class MultiplayerGame extends GeneralGame {
 
-    public MultiplayerGame(){
-        super();
-    }
-
-    public boolean checkFirstSelectedSquare(BoardSquare square){
-
-        return false;
+    @Override
+    public void postMove() {
+        super.postMove();
+        GameManager.resetBoard();
+        GameManager.blockInput();
+        switchTurns();
     }
 }
