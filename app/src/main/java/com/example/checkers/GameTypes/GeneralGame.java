@@ -92,7 +92,7 @@ public abstract class GeneralGame {
 
     public void completeMove(){
         GamePiece piece = currentTurn.getPieceAtLocation(firstInput);
-        piece.moveTo(secondInput);
+        currentTurn.movePieceTo(piece, secondInput);
         postMove();
     }
 
@@ -103,7 +103,7 @@ public abstract class GeneralGame {
         otherPlayer.removePiece(jumpedPiece);
         otherPlayer.decreasePieceCount();
         GamePiece piece = currentTurn.getPieceAtLocation(firstInput);
-        piece.moveTo(secondInput);
+        currentTurn.movePieceTo(piece, secondInput);
 
         if(checkForMoreJumps()){
             GameManager.resetBoard();

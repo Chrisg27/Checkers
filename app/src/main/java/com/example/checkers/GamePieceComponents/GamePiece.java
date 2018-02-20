@@ -49,14 +49,4 @@ public abstract class GamePiece {
     public BoardSquare getJumpedSquareFor(BoardSquare newLocation){
         return moveHandler.getJumpedSquare(this.location, newLocation);
     }
-
-    public void moveTo(BoardSquare square){
-        square.setHasPiece(true);
-        square.setImageResource(getPieceImageId());
-
-        location.setHasPiece(false);
-        location.setImageResource(android.R.color.transparent);
-
-        location = square;
-    }
 }

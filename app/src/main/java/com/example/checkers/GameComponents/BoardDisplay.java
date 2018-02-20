@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.view.View;
 
 import com.example.checkers.R;
+import com.example.checkers.Sounds.BackgroundMusic;
+import com.example.checkers.Sounds.BackgroundMusicManager;
 
 public class BoardDisplay extends AppCompatActivity {
+
+    BackgroundMusic backgroundMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +27,20 @@ public class BoardDisplay extends AppCompatActivity {
                 GameManager.startNewGame();
             }
         });
+    }
+
+    @Override
+    protected void onStart(){
+        super.onStart();
+        backgroundMusic = new BackgroundMusic(this, BackgroundMusicManager.getCurrentPosition());
+        backgroundMusic.play();
+    }
+
+    @Override
+    protected void onStop(){
+        super.onStop();
+        BackgroundMusicManager.setCurrentPosition(backgroundMusic.getCurrentPosition());
+        backgroundMusic.stop();
     }
 
     public void onClick(View view){

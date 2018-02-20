@@ -21,7 +21,10 @@ public class GameManager {
 
     public static void setDisplay(BoardDisplay activity){
         activityView = activity;
+    }
 
+    public static BoardDisplay getDisplay(){
+        return activityView;
     }
 
     public static BoardSquare getSquareAt(int rowIndex, int columnIndex){

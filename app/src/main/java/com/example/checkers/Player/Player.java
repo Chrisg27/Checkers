@@ -5,6 +5,8 @@ import com.example.checkers.GameComponents.BoardSquare;
 import com.example.checkers.GameComponents.GameManager;
 import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.GamePieceComponents.KingPiece;
+import com.example.checkers.Sounds.PlacePieceSound;
+import com.example.checkers.Sounds.Sound;
 
 import java.util.ArrayList;
 
@@ -65,6 +67,19 @@ public abstract class Player {
         kingPiece.getLocation().setImageResource(kingPiece.getPieceImageId());
         int replaceableIndex = pieces.indexOf(piece);
         pieces.set(replaceableIndex, kingPiece);
+    }
+
+    public void movePieceTo(GamePiece piece, BoardSquare square){
+        Sound moveSound = new PlacePieceSound(GameManager.getDisplay());
+        moveSound.play();
+
+        square.setHasPiece(true);
+        square.setImageResource(piece.getPieceImageId());
+
+        piece.getLocation().setHasPiece(false);
+        piece.getLocation().setImageResource(android.R.color.transparent);
+
+        piece.setLocation(square);
     }
 
     public GamePiece getPieceAtLocation(BoardSquare square){
