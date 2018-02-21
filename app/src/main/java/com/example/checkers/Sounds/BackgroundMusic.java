@@ -6,24 +6,15 @@ import com.example.checkers.R;
 
 public class BackgroundMusic extends Sound {
 
-    private int startingPosition;
-
-    public BackgroundMusic(Context context, int startPosition){
+    public BackgroundMusic(Context context){
         super(context);
-        this.startingPosition = startPosition;
         player = MediaPlayer.create(context, R.raw.bensoundlove);
         player.setLooping(true);
     }
 
     @Override
     public void play() {
-        player.setOnSeekCompleteListener(new MediaPlayer.OnSeekCompleteListener() {
-            @Override
-            public void onSeekComplete(MediaPlayer mediaPlayer) {
-                player.start();
-            }
-        });
-        player.seekTo(startingPosition);
+        player.start();
     }
 
     @Override
@@ -31,7 +22,7 @@ public class BackgroundMusic extends Sound {
         player.release();
     }
 
-    public int getCurrentPosition(){
-        return player.getCurrentPosition();
+    public void pause(){
+        player.pause();
     }
 }

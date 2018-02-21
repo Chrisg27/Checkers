@@ -14,19 +14,18 @@ public class MultiplayerSelectScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplayer_select_screen);
+        backgroundMusic = BackgroundMusicManager.getBackgroundMusic();
     }
 
     @Override
-    protected void onStart(){
-        super.onStart();
-        backgroundMusic = new BackgroundMusic(this, BackgroundMusicManager.getCurrentPosition());
+    protected void onResume(){
+        super.onResume();
         backgroundMusic.play();
     }
 
     @Override
-    protected void onStop(){
-        super.onStop();
-        BackgroundMusicManager.setCurrentPosition(backgroundMusic.getCurrentPosition());
-        backgroundMusic.stop();
+    protected void onPause(){
+        super.onPause();
+        backgroundMusic.pause();
     }
 }

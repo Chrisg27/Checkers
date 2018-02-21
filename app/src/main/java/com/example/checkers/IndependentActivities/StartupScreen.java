@@ -18,19 +18,25 @@ public class StartupScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup_screen);
+        backgroundMusic = new BackgroundMusic(this);
+        BackgroundMusicManager.setBackgroundMusic(backgroundMusic);
     }
 
     @Override
-    protected void onStart(){
-        super.onStart();
-        backgroundMusic = new BackgroundMusic(this, BackgroundMusicManager.getCurrentPosition());
+    protected void onResume(){
+        super.onResume();
         backgroundMusic.play();
     }
 
     @Override
-    protected void onStop(){
-        super.onStop();
-        BackgroundMusicManager.setCurrentPosition(backgroundMusic.getCurrentPosition());
+    protected void onPause(){
+        super.onPause();
+        backgroundMusic.pause();
+    }
+
+    @Override
+    protected void onDestroy(){
+        super.onDestroy();
         backgroundMusic.stop();
     }
 
