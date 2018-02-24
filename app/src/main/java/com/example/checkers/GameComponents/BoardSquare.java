@@ -10,6 +10,7 @@ import android.widget.Checkable;
 import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.R;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 public class BoardSquare extends AppCompatImageButton implements Checkable {
@@ -98,7 +99,7 @@ public class BoardSquare extends AppCompatImageButton implements Checkable {
     }
 
     private void addToBoardSquareArray(){
-        GameManager.setSquareAt(rowIndex, columnIndex, this);
+        BoardSquareManager.setSquareAt(rowIndex, columnIndex, this);
     }
 
     public void adjustSize(int size){

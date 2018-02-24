@@ -1,17 +1,15 @@
 package com.example.checkers.GameTypes;
 
 import com.example.checkers.GameComponents.BoardSquareManager;
+import com.example.checkers.GameComponents.UIManager;
 
-public class PassAndPlayGame extends GeneralGame {
-
-    public PassAndPlayGame(){
-        setFileName("offline_game.dat");
-    }
+public class OnlineGame extends GeneralGame {
 
     @Override
     public void postMove() {
         super.postMove();
         BoardSquareManager.resetBoard();
+        UIManager.blockInput();
         switchTurns();
     }
 }

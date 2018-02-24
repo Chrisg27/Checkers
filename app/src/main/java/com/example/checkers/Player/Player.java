@@ -2,21 +2,23 @@ package com.example.checkers.Player;
 
 import com.example.checkers.Colors.PieceColor;
 import com.example.checkers.GameComponents.BoardSquare;
+import com.example.checkers.GameComponents.BoardSquareManager;
 import com.example.checkers.GameComponents.GameManager;
 import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.GamePieceComponents.KingPiece;
 import com.example.checkers.Sounds.PlacePieceSound;
 import com.example.checkers.Sounds.Sound;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public abstract class Player {
+public abstract class Player implements Serializable{
 
     private int numberOfPiecesLeft = 12;
     private PieceColor color;
     private ArrayList<GamePiece> pieces = new ArrayList<>();
-    private ArrayList<BoardSquare> pieceStartingPositions = new ArrayList<>();
-    private int kingRow;
+    private transient ArrayList<BoardSquare> pieceStartingPositions = new ArrayList<>();
+    private transient int kingRow;
 
     public Player(PieceColor color){
         this.color = color;
@@ -52,6 +54,14 @@ public abstract class Player {
 
     public void setPieceStartingPositions(ArrayList<BoardSquare> positions){
         pieceStartingPositions = positions;
+    }
+
+    public void setUpLoadedPieceLocations(){
+        for(GamePiece piece : getPieces()){
+            BoardSquare square = BoardSquareManager.getSquareAt(piece.getLocationRowIndex(), piece.getLocationColumnIndex());
+            piece.setLocation(square);
+            square.setHasPiece(true);
+        }
     }
 
     public void drawPieces(){

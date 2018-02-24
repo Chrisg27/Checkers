@@ -19,14 +19,14 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".IndependentActivities.SingleplayerSelectScreen"
+            android:name=".IndependentActivities.OfflineGameSelectScreen"
             android:screenOrientation="portrait"
             android:noHistory="true"/>
         <activity
             android:name=".GameComponents.BoardDisplay"
             android:screenOrientation="portrait"/>
         <activity
-            android:name=".IndependentActivities.MultiplayerSelectScreen"
+            android:name=".IndependentActivities.OnlineGameSelectScreen"
             android:screenOrientation="portrait"
             android:noHistory="true"/>
     </application>

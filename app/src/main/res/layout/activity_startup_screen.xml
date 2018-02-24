@@ -20,20 +20,20 @@
         app:layout_constraintVertical_bias="0.128" />
 
     <Button
-        android:id="@+id/button_singlePlayer"
+        android:id="@+id/button_offline"
         android:layout_width="148dp"
         android:layout_height="73dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="48dp"
-        android:onClick="goToSingleplayerSelectScreen"
-        android:text="@string/singleplayer"
+        android:onClick="goToOfflineGameSelectScreen"
+        android:text="@string/offline"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_welcome" />
 
     <Button
-        android:id="@+id/button_multiplayer"
+        android:id="@+id/button_online"
         android:layout_width="148dp"
         android:layout_height="73dp"
         android:layout_marginBottom="8dp"
@@ -45,7 +45,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button_singlePlayer"
+        app:layout_constraintTop_toBottomOf="@+id/button_offline"
         app:layout_constraintVertical_bias="0.03" />
 
 </android.support.constraint.ConstraintLayout>

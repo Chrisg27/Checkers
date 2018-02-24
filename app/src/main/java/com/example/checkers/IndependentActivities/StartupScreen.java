@@ -8,7 +8,6 @@ import android.view.View;
 import com.example.checkers.R;
 import com.example.checkers.Sounds.BackgroundMusic;
 import com.example.checkers.Sounds.BackgroundMusicManager;
-import com.example.checkers.Sounds.Sound;
 
 public class StartupScreen extends AppCompatActivity {
 
@@ -40,8 +39,8 @@ public class StartupScreen extends AppCompatActivity {
         backgroundMusic.stop();
     }
 
-    public void goToSingleplayerSelectScreen(View view){
-        Intent intent = new Intent(this, SingleplayerSelectScreen.class);
+    public void goToOfflineGameSelectScreen(View view){
+        Intent intent = new Intent(this, OfflineGameSelectScreen.class);
         startActivity(intent);
     }
 }

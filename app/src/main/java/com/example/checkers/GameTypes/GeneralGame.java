@@ -2,23 +2,27 @@ package com.example.checkers.GameTypes;
 
 import com.example.checkers.GameComponents.BoardSquare;
 import com.example.checkers.GameComponents.GameManager;
+import com.example.checkers.GameComponents.UIManager;
 import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.Player.Player;
 import com.example.checkers.Player.Player1;
 import com.example.checkers.Player.Player2;
+import java.io.Serializable;
 
-import java.util.ArrayList;
-
-public abstract class GeneralGame {
+public abstract class GeneralGame implements Serializable {
 
     private Player1 player1;
     private Player2 player2;
     private Player currentTurn;
-    private BoardSquare firstInput = null;
-    private BoardSquare secondInput = null;
     private boolean isFirstInput = true;
     private boolean isPostJumpMove = false;
+    private String fileName;
 
+    private transient BoardSquare firstInput = null;
+    private transient BoardSquare secondInput = null;
+
+    public String getFileName(){return fileName;}
+    public void setFileName(String name){fileName = name;}
     public Player1 getPlayer1(){
         return player1;
     }
@@ -41,6 +45,11 @@ public abstract class GeneralGame {
         currentTurn = player1;
     }
 
+    public void loadGame(){
+        player1.setUpLoadedPieceLocations();
+        player2.setUpLoadedPieceLocations();
+    }
+
     public void handleInput(BoardSquare square){
 
         //checks to see if the same piece was toggled off
@@ -51,7 +60,7 @@ public abstract class GeneralGame {
             else{
                 isFirstInput = true;
                 firstInput = null;
-                GameManager.resetBoard();
+                UIManager.resetBoard();
             }
 
         }  else if(isFirstInput) {
@@ -59,7 +68,7 @@ public abstract class GeneralGame {
                 isFirstInput = false;
                 firstInput = square;
 
-                GameManager.blockInput();
+                UIManager.blockInput();
                 showPossibleMovesFor(currentTurn.getPieceAtLocation(square));
                 showPossibleJumpsFor(currentTurn.getPieceAtLocation(square));
 
@@ -83,11 +92,11 @@ public abstract class GeneralGame {
     }
 
     public void showPossibleMovesFor(GamePiece piece){
-        GameManager.showMoves(piece.getPossibleMoves());
+        UIManager.showMoves(piece.getPossibleMoves());
     }
 
     public void showPossibleJumpsFor(GamePiece piece){
-        GameManager.showMoves(piece.getPossibleJumps());
+        UIManager.showMoves(piece.getPossibleJumps());
     }
 
     public void completeMove(){
@@ -106,7 +115,7 @@ public abstract class GeneralGame {
         currentTurn.movePieceTo(piece, secondInput);
 
         if(checkForMoreJumps()){
-            GameManager.resetBoard();
+            UIManager.resetBoard();
             firstInput.highlight();
             isPostJumpMove = true;
             showPossibleJumpsFor(piece);
@@ -135,7 +144,7 @@ public abstract class GeneralGame {
 
     public void checkForWinner(){
         Player otherPlayer = getOtherPlayer();
-        if(otherPlayer.getNumberOfPiecesLeft() == 0) GameManager.endGame();
+        if(otherPlayer.getNumberOfPiecesLeft() == 0) GameManager.endGame(fileName);
     }
 
     public void postMove(){

@@ -1,8 +1,9 @@
 package com.example.checkers.Colors;
 
 import com.example.checkers.R;
+import java.io.Serializable;
 
-public class Player2PieceColor implements PieceColor {
+public class Player2PieceColor implements PieceColor, Serializable{
 
     @Override
     public int getPieceImageId() {

@@ -6,14 +6,14 @@ import com.example.checkers.R;
 import com.example.checkers.Sounds.BackgroundMusic;
 import com.example.checkers.Sounds.BackgroundMusicManager;
 
-public class MultiplayerSelectScreen extends AppCompatActivity {
+public class OnlineGameSelectScreen extends AppCompatActivity {
 
     BackgroundMusic backgroundMusic;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_multiplayer_select_screen);
+        setContentView(R.layout.activity_online_game_select_screen);
         backgroundMusic = BackgroundMusicManager.getBackgroundMusic();
     }
 

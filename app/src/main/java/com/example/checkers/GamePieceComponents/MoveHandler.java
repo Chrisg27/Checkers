@@ -1,12 +1,14 @@
 package com.example.checkers.GamePieceComponents;
 
 import com.example.checkers.GameComponents.BoardSquare;
+import com.example.checkers.GameComponents.BoardSquareManager;
 import com.example.checkers.GameComponents.GameManager;
 import com.example.checkers.Player.Player;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
-public class MoveHandler {
+public class MoveHandler{
 
     public ArrayList<BoardSquare> verifyPossibleMoves(ArrayList<BoardSquare> possibleMoves){
 
@@ -40,7 +42,7 @@ public class MoveHandler {
     public BoardSquare getJumpedSquare(BoardSquare currentSquare, BoardSquare newLocation){
         int startRow = currentSquare.getRowIndex();
         int startColumn = currentSquare.getColumnIndex();
-        return GameManager.getSquareAt(startRow - getRowFactor(currentSquare, newLocation), startColumn - getColumnFactor(currentSquare, newLocation));
+        return BoardSquareManager.getSquareAt(startRow - getRowFactor(currentSquare, newLocation), startColumn - getColumnFactor(currentSquare, newLocation));
     }
 
     public ArrayList<BoardSquare> verifyPossibleJumps(ArrayList<BoardSquare> possibleJumps, BoardSquare currentSquare){

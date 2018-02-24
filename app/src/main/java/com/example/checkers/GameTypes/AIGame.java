@@ -1,14 +1,15 @@
 package com.example.checkers.GameTypes;
 
-import com.example.checkers.GameComponents.GameManager;
+import com.example.checkers.GameComponents.BoardSquareManager;
+import com.example.checkers.GameComponents.UIManager;
 
 public class AIGame extends GeneralGame {
 
     @Override
     public void postMove() {
         super.postMove();
-        GameManager.resetBoard();
-        GameManager.blockInput();
+        BoardSquareManager.resetBoard();
+        UIManager.blockInput();
         switchTurns();
     }
 }

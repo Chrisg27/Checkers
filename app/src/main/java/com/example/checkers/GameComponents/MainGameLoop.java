@@ -1,6 +1,5 @@
 package com.example.checkers.GameComponents;
 
-import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.GameTypes.GeneralGame;
 import com.example.checkers.Player.Player;
 import com.example.checkers.Player.Player1;
@@ -16,7 +15,7 @@ public class MainGameLoop {
         this.gameType = gameType;
     }
 
-    public void startGame(){
+    public void startNewGame(){
 
         gameType.newGame();
         player1 = gameType.getPlayer1();
@@ -25,7 +24,23 @@ public class MainGameLoop {
         player1.drawPieces();
         player2.drawPieces();
 
-        GameManager.acceptInput();
+        UIManager.acceptInput();
+    }
+
+    public void startLoadedGame(){
+
+        gameType.loadGame();
+        player1 = gameType.getPlayer1();
+        player2 = gameType.getPlayer2();
+
+        player1.drawPieces();
+        player2.drawPieces();
+
+        UIManager.acceptInput();
+    }
+
+    public GeneralGame getGame(){
+        return gameType;
     }
 
     public void passInput(BoardSquare square){
