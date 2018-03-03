@@ -114,6 +114,7 @@ public abstract class GeneralGame implements Serializable {
             UIManager.resetBoard();
             firstInput.highlight();
             isPostJumpMove = true;
+            UIManager.blockInput();
             showPossibleJumpsFor(piece);
         }
         else postMove();

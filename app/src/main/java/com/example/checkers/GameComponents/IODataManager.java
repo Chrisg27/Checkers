@@ -54,6 +54,6 @@ public class IODataManager {
 
     public static void delete(String fileName, Context context){
         File file = context.getFileStreamPath(fileName);
-        file.delete();
+        if(file.delete()) System.out.println("DELETED");
     }
 }
