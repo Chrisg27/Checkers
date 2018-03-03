@@ -74,4 +74,9 @@ public class Player2 extends Player {
             pieces.add(new Player2Piece(this, startingPositions.get(index)));
         }
     }
+
+    @Override
+    public String toString(){
+        return "Player 2";
+    }
 }

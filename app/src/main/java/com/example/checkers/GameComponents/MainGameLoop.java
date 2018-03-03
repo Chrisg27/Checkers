@@ -27,7 +27,7 @@ public class MainGameLoop {
         UIManager.acceptInput();
     }
 
-    public void startLoadedGame(){
+    public void startSavedGame(){
 
         gameType.loadGame();
         player1 = gameType.getPlayer1();

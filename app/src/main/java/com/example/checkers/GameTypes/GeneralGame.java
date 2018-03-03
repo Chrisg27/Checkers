@@ -1,7 +1,7 @@
 package com.example.checkers.GameTypes;
 
 import com.example.checkers.GameComponents.BoardSquare;
-import com.example.checkers.GameComponents.GameManager;
+import com.example.checkers.GameComponents.BoardSquareManager;
 import com.example.checkers.GameComponents.UIManager;
 import com.example.checkers.GamePieceComponents.GamePiece;
 import com.example.checkers.Player.Player;
@@ -26,9 +26,11 @@ public abstract class GeneralGame implements Serializable {
     public Player1 getPlayer1(){
         return player1;
     }
+    public void setPlayer1(Player1 player){player1 = player;}
     public Player2 getPlayer2(){
         return player2;
     }
+    public void setPlayer2(Player2 player){player2 = player;}
     public boolean isFirstInput(){
         return isFirstInput;
     }
@@ -38,17 +40,11 @@ public abstract class GeneralGame implements Serializable {
     public Player getCurrentTurn(){
         return currentTurn;
     }
+    public void setCurrentTurn(Player player){currentTurn = player;}
 
-    public void newGame(){
-        player1 = new Player1();
-        player2 = new Player2();
-        currentTurn = player1;
-    }
-
-    public void loadGame(){
-        player1.setUpLoadedPieceLocations();
-        player2.setUpLoadedPieceLocations();
-    }
+    public abstract void newGame();
+    public abstract void loadGame();
+    public abstract void checkForWinner();
 
     public void handleInput(BoardSquare square){
 
@@ -142,16 +138,12 @@ public abstract class GeneralGame implements Serializable {
         }
     }
 
-    public void checkForWinner(){
-        Player otherPlayer = getOtherPlayer();
-        if(otherPlayer.getNumberOfPiecesLeft() == 0) GameManager.endGame(fileName);
-    }
-
     public void postMove(){
         firstInput = null;
         secondInput = null;
         isFirstInput = true;
         isPostJumpMove = false;
+        BoardSquareManager.resetBoard();
         checkForKings();
         checkForWinner();
     }

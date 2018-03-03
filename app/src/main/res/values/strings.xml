@@ -7,5 +7,7 @@
     <string name="pass_and_play">Pass and play</string>
     <string name="computer">Computer</string>
     <string name="resume">Resume Game</string>
+    <string name="rematch">Rematch</string>
+    <string name="menu">Main Menu</string>
     <string name="blank" />
 </resources>

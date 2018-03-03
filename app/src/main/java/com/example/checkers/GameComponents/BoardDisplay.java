@@ -28,7 +28,7 @@ public class BoardDisplay extends AppCompatActivity {
             public void run() {
                 fitBoardOnScreen();
 
-                if(GameManager.isStartingLoadedGame()) GameManager.startLoadedGame();
+                if(GameManager.isSavedGame()) GameManager.startSavedGame();
                 else GameManager.startNewGame();
             }
         });
@@ -44,12 +44,13 @@ public class BoardDisplay extends AppCompatActivity {
     protected void onPause(){
         super.onPause();
         backgroundMusic.pause();
+        if(isFinishing() && !GameManager.isDeletedGame()) GameManager.saveGame();
+        GameManager.setIsDeletedGame(false);
     }
 
     @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        GameManager.saveGame();
+    protected void onStop(){
+        super.onStop();
     }
 
     public void onClick(View view){

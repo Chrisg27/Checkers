@@ -26,6 +26,7 @@ public abstract class Player implements Serializable{
 
     public abstract void setPieceStartingPositions();
     public abstract void firstTimePieceSetUp();
+    public abstract String toString();
 
     public void decreasePieceCount(){
         numberOfPiecesLeft --;

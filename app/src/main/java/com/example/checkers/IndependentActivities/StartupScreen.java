@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.checkers.GameComponents.GameManager;
 import com.example.checkers.R;
 import com.example.checkers.Sounds.BackgroundMusic;
 import com.example.checkers.Sounds.BackgroundMusicManager;
@@ -17,6 +18,7 @@ public class StartupScreen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_startup_screen);
+        GameManager.setApplicationContext(getApplicationContext());
         backgroundMusic = new BackgroundMusic(this);
         BackgroundMusicManager.setBackgroundMusic(backgroundMusic);
     }

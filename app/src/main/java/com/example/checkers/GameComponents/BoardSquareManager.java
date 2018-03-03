@@ -26,6 +26,10 @@ public class BoardSquareManager {
         }
     }
 
+    public static void setNewGameBoard(){
+        squares = new BoardSquare[8][8];
+    }
+
     public static void resetBoard(){
         freeBoardSquares();
 
